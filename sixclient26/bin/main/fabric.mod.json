@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "sixclient",
+  "version": "${version}",
+  "name": "SIX CLIENT",
+  "description": "Menu utama kustom SIX CLIENT - Minecraft Java Client.",
+  "authors": ["SIX CLIENT"],
+  "license": "All-Rights-Reserved",
+  "icon": "assets/sixclient/textures/gui/logo_icon.png",
+  "environment": "client",
+  "entrypoints": { "client": ["com.sixclient.SixClientMod"] },
+  "mixins": ["sixclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
