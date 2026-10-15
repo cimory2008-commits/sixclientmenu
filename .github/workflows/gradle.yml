@@ -25,7 +25,7 @@ jobs:
       uses: gradle/actions/setup-gradle@v4
 
     - name: Grant execute permission for gradlew
-      run: chmod +x ./sixclient26/gradlew
+      run: chmod -R 777 ./sixclient26
       continue-on-error: true
 
     - name: Build Mod File
