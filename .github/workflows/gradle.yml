@@ -32,3 +32,9 @@ jobs:
       run: |
         cd sixclient26
         gradle build -x test --no-daemon
+
+    - name: Upload Mod Jar
+      uses: actions/upload-artifact@v4
+      with:
+        name: SixClientMod-JAR
+        path: sixclient26/build/libs/*.jar
